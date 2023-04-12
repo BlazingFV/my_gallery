@@ -100,8 +100,8 @@ class GalleryProvider extends ChangeNotifier {
       if (response.statusCode == 201 || response.statusCode == 200) {
         await getUserGalleryImages();
         Get.back(canPop: true, closeOverlays: true);
-        // SnackBarService.instance.showSnackBarSuccess('Logged In Successfully ');
-        await Future.delayed(const Duration(milliseconds: 500));
+        SnackBarService.instance.showSnackBarSuccess('Uploaded Successfully');
+        // await Future.delayed(const Duration(milliseconds: 500));
         // Get.offAllNamed(GetRoutes.getRouteGalleryScreen());
         notifyListeners();
       } else {
