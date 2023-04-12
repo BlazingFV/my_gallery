@@ -6,10 +6,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_gallery/src/constants/provider_constans.dart';
-import 'package:my_gallery/src/features/gallery/presentation/widgets/custom_container_widget.dart';
 import 'package:path_drawing/path_drawing.dart';
 
 import '../../../../utils/sizer.dart';
+import 'custom_container_widget.dart';
 
 class GalleryBackgroundWidgets extends ConsumerWidget {
   GalleryBackgroundWidgets({

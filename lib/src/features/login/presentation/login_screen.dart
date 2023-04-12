@@ -67,15 +67,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Stack(
                   children: [
                     const LoginScreenBackGroundWidgets(),
-                    AnimatedPositioned(
+                    AnimatedPadding(
                       duration: const Duration(milliseconds: 350),
                       curve: Curves.easeInOut,
-                      top: sizer(
-                          isWidth: false,
-                          value: isKeyboardVisible
-                              ? (keyboardHeight + totalHeight / 4.3)
-                              : 368),
-                      left: sizer(isWidth: true, value: 41),
+                      padding: EdgeInsets.only(
+                        top: sizer(
+                            isWidth: false,
+                            value: isKeyboardVisible
+                                ? (keyboardHeight / 1.3)
+                                : 368),
+                        left: sizer(isWidth: true, value: 41),
+                      ),
                       child: const LoginFormWidget(),
                     )
                   ],

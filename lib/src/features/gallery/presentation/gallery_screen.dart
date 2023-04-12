@@ -37,14 +37,14 @@ class _GalleryScreenConsumerState extends ConsumerState<GalleryScreen> {
       body: SafeArea(
         top: false,
         child: SizedBox(
-          width: sizer(value: totalWidth, isWidth: true),
+          width: sizer(value: 428, isWidth: true),
           height: sizer(isWidth: false, value: 926),
           child: SingleChildScrollView(
             physics: const NeverScrollableScrollPhysics(),
             child: Column(
               children: [
                 SizedBox(
-                  width: sizer(value: totalWidth, isWidth: true),
+                  width: sizer(value: 428, isWidth: true),
                   height: sizer(isWidth: false, value: 926),
                   child: Stack(
                     children: [

@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
               minWidth: 320,
               // // defaultScale: true,
               defaultScale: true,
-              // defaultScaleFactor: 1.3,
+              defaultScaleFactor: 1,
               // mediaQueryData:const MediaQueryData(),
               useShortestSide: true,
 
@@ -71,6 +71,7 @@ class MyApp extends StatelessWidget {
                 ResponsiveBreakpoint.autoScale(375,
                     name: MOBILE, scaleFactor: 1),
                 ResponsiveBreakpoint.resize(390, name: MOBILE, scaleFactor: 1),
+                ResponsiveBreakpoint.resize(392, name: MOBILE, scaleFactor: 1),
                 ResponsiveBreakpoint.resize(393, name: MOBILE, scaleFactor: 1),
                 ResponsiveBreakpoint.resize(395, name: MOBILE, scaleFactor: 1),
                 ResponsiveBreakpoint.resize(400, name: MOBILE, scaleFactor: 1),
